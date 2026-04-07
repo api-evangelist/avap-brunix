@@ -1,8 +1,8 @@
 aid: avap-brunix
 name: AVAP BRUNIX
 description: >-
-  Artificial Intelligence where you are the copilotIntegrated into the core of
-  AVAP, efficiencyand productivity in API development. 
+  Artificial Intelligence where you are the copilotIntegrated into the core of AVAP,
+  efficiencyand productivity in API development.
 type: Index
 position: Consumer
 access: 3rd-Party
@@ -18,8 +18,8 @@ apis:
   - aid: avap-brunix:avap-brunix
     name: AVAP BRUNIX
     description: >-
-      Artificial Intelligence where you are the copilotIntegrated into the core
-      of AVAP, efficiencyand productivity in API development. 
+      Artificial Intelligence where you are the copilotIntegrated into the core of
+      AVAP, efficiencyand productivity in API development.
     humanURL: ' https://www.avapframework.com/brunix'
     tags:
       - API
