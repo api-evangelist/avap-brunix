@@ -41,3 +41,5 @@ common:
   url: https://www.avapframework.com/
 - type: LinkedIn
   url: https://www.linkedin.com/company/avap-framework/
+- type: LLMsTxt
+  url: https://avapframework.com/llms.txt
