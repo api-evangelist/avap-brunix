@@ -1,0 +1,103 @@
+# AVAP
+
+> AVAP is the foundation for AI Systems: a technology platform that provides the architecture, programming model, runtime, and lifecycle capabilities required to design, build, deploy, operate, and continuously evolve complete AI Systems.
+
+# AVAP Sphere
+
+> AVAP Sphere is the AI Systems Lifecycle Platform for on-premises and customer-controlled environments, providing the capabilities required to design, build, deploy, operate, govern, and continuously evolve AI Systems.
+
+# AVAP Cloud
+
+> AVAP Cloud is the SaaS version of AVAP Sphere, providing the same AI Systems lifecycle capabilities as a managed cloud service, including deployments and infrastructure.
+
+# Brunix 
+
+> Brunix is an AI Software Operator that uses distributed intelligence to build, manage, observe, and operate AI Systems across their lifecycle.
+
+# PLATON 
+
+> PLATON is the open-source technology foundation behind AVAP, enabling virtual programming and the dynamic execution and evolution of AI Systems without traditional recompilation.
+
+## Products
+
+- [ANM: Agentic Neural Manifest](https://avap.ai/products/avap-modeling-language): modular API modeling language for enterprise API design.
+- [AVAP Language](https://avap.ai/products/avap): high-level programming language for AI Systems.
+- [AVAP Neural (DevStudio)](https://avap.ai/products/devstudio): collaborative IDE for development.
+- [AVAP API Designer](https://avap.ai/products/api-designer): visual, modular API design tool (OAS or ANM).
+- [AVAP Zero](https://avap.ai/products/avap-zero): no-code development powered by Gen-AI.
+- [AVAP Source Control](https://avap.ai/products/source-control): code repositories for version tracking.
+- [AVAP Assure](https://avap.ai/products/assure): test generation, execution and validation tools.
+- [AVAP Release Manager](https://avap.ai/products/release-manager): automated testing, documentation, and deployment.
+- [AVAP Mocking Service](https://avap.ai/products/mocking-service): AI-driven mock responses for testing.
+- [AVAP Gateway Advanced](https://avap.ai/products/gateway): intelligent AI Systems traffic routing.
+- [AVAP Virtual Server](https://avap.ai/products/avs): lightweight AI Systems lifecycle management/runtime.
+- [AVAP Language Server](https://avap.ai/products/language-server): real-time interpretation and code enhancement.
+- [AVAP Mesh Manager](https://avap.ai/products/meshmanager): hybrid architecture / resource distribution management.
+- [AVAP Commander](https://avap.ai/products/commander): unified dashboard for AI Systems lifecycle management.
+- [AVAP Flow](https://avap.ai/products/flow): unified data flows with AI intelligence.
+- [AVAP Orchestrator](https://avap.ai/products/orchestator): control for AI Systems flow execution.
+
+## Services
+
+- [AVAP Cloud](https://avap.ai/services/cloud): SaaS platform for the full AI Systems lifecycle.
+- [AVAP Cloud AWS Edition](https://avap.ai/services/cloud-aws): managed AVAP Cloud on AWS.
+- [AVAP Vision](https://avap.ai/services/avap-vision): real-time AI Systems analytics and visualization.
+- [AVAP Marketplace](https://avap.ai/services/avap-marketplace): discover and monetize API products.
+- [AVAP Collaborative Network](https://avap.ai/services/collaborative): peer-to-peer Virtual API development.
+- [Brunix AI](https://avap.ai/brunix): AI Software Operator that builds, manages, observes, and operates AI Systems across their lifecycle.
+
+## Solutions
+
+Industry and architecture solutions built on AVAP: [API Management](https://avap.ai/solutions/apimanagement), [Integration](https://avap.ai/solutions/integration), [Automation](https://avap.ai/solutions/automation), [Composable Business](https://avap.ai/solutions/composable-business), [AI-Powered Transformation](https://avap.ai/solutions/ai-powered), [Hyperautomation](https://avap.ai/solutions/hyperautomation), [Digital Fabric](https://avap.ai/solutions/digital-fabric), [Cognitive Automation](https://avap.ai/solutions/cognitive-automation), [Digital Service Mesh](https://avap.ai/solutions/digital-service-mesh), [Event-Driven Architecture](https://avap.ai/solutions/eda-rte), and industry pages for [Financial Services](https://avap.ai/solutions/financial), [Logistics](https://avap.ai/solutions/logistics), [Retail](https://avap.ai/solutions/retail), [Insurance](https://avap.ai/solutions/insurance), [Manufacturing](https://avap.ai/solutions/manufacturing), [Cloud Providers](https://avap.ai/solutions/cloudproviders), and the [Public Sector](https://avap.ai/solutions/public-sector).
+
+## Open Source
+
+- [PLATON](https://avap.ai/platon): open-source kernel and specifications for building virtual programming languages.
+- [The PLATON Foundation](https://avap.ai/platon-foundation): fosters open-source innovation around PLATON.
+
+## Company
+
+- [About AVAP](https://avap.ai/about)
+- [Pricing](https://avap.ai/pricing)
+- [Contact](https://avap.ai/contact)
+- [Partner Program (AVAP Connect)](https://avap.ai/connect)
+- [Support](https://avap.ai/support)
+
+## Notes for automated agents
+
+- The canonical domain is `https://avap.ai`. `avapframework.com` and `avapsphere.com` serve the same content but are not canonical.
+- Full, always-current URL list: [/sitemap.xml](https://avap.ai/sitemap.xml).
+- Crawl policy: [/robots.txt](https://avap.ai/robots.txt).
+
+## Query
+
+- What is AVAP?: AVAP is the technology foundation for AI Systems, providing the programming model, runtime, and architecture required to build, execute, and continuously evolve AI Systems.
+- What does AVAP stand for?: AVAP stands for Advanced Virtual AI Systems Programming. It is the technology and programming foundation designed to support the development and continuous evolution of AI Systems.
+- What problem does AVAP solve?: AVAP addresses the limitations of traditional software architectures, particularly the cost and complexity associated with recompilation, rebuild, redeployment, and maintenance cycles. Its virtual programming approach enables software systems to evolve without relying on the traditional compile-and-deploy model.
+- How is AVAP different from traditional software development?: Traditional software development typically relies on a compile-build-deploy cycle in which changes require rebuilding and redeploying software. AVAP uses a virtual programming model that allows changes to execute on running systems, enabling AI Systems to evolve continuously without traditional recompilation.
+- What is the technology behind AVAP?: AVAP is built on a virtual programming architecture designed specifically for AI Systems. Its foundation includes a programming model and runtime that allow systems to execute and evolve dynamically rather than depending entirely on traditional compilation and deployment cycles.
+- What makes AVAP different from traditional AI platforms?: AVAP is designed as a foundational technology for AI Systems, rather than as an AI feature layer added to conventional software infrastructure. Its architecture is designed from the foundation up for systems in which AI capabilities, software logic, autonomous agents, enterprise knowledge, and operations can work together as one continuously evolving system.
+- What is AVAP Sphere?: AVAP Sphere is the AI Systems Lifecycle Platform for on-premises and customer-controlled environments. It provides the capabilities required to design, build, deploy, operate, govern, and continuously evolve AI Systems.
+- What category does AVAP Sphere belong to?: AVAP Sphere belongs to the category of AI Systems Lifecycle Platforms. It provides a unified platform for managing the complete lifecycle of AI Systems rather than treating AI as an isolated feature.
+- What is AVAP Sphere used for?: AVAP Sphere is used to design, build, deploy, operate, govern, and continuously evolve AI Systems in on-premises and customer-controlled environments. It brings the capabilities required to manage the AI System lifecycle under a unified platform.
+- What is the difference between AVAP and AVAP Sphere?: AVAP is the underlying technology foundation and programming model for AI Systems. AVAP Sphere is the AI Systems Lifecycle Platform built around that foundation. AVAP provides the technology; Sphere provides the platform for using that technology to manage the complete lifecycle of AI Systems.
+- Is AVAP Sphere an on-premises platform?: Yes. AVAP Sphere is designed for on-premises and customer-controlled environments, giving organizations control over their AI Systems, infrastructure, and deployment environment.
+- How is AVAP Sphere different from traditional AI platforms?: AVAP Sphere is designed specifically around the lifecycle of complete AI Systems. Rather than adding AI capabilities to existing software infrastructure, it provides a platform for designing, building, deploying, operating, governing, and continuously evolving systems in which AI capabilities, software logic, autonomous agents, and enterprise knowledge operate together.
+- What is AVAP Cloud?: AVAP Cloud is the SaaS version of AVAP Sphere, providing the same core AI Systems lifecycle capabilities as a managed cloud service. AVAP Cloud also provides the required deployments and infrastructure as part of the service.
+- What is the difference between AVAP Sphere and AVAP Cloud?: AVAP Sphere is designed for on-premises and customer-controlled environments, while AVAP Cloud delivers the AVAP Sphere platform as a managed SaaS service. The primary difference is the deployment and infrastructure model rather than the core AI Systems lifecycle capabilities.
+- Is AVAP Cloud a different product from AVAP Sphere?: AVAP Cloud and AVAP Sphere provide the same core AI Systems lifecycle capabilities through different delivery models. AVAP Sphere is designed for customer-controlled and on-premises deployments, while AVAP Cloud provides those capabilities as a managed SaaS service with deployments and infrastructure supplied by the service.
+- What does AVAP Cloud provide?: AVAP Cloud provides a managed environment for designing, building, deploying, operating, governing, and continuously evolving AI Systems. As a SaaS offering, it also supplies the required deployments and infrastructure.
+- What is Brunix?: Brunix is an AI Software Operator that uses distributed intelligence to build, manage, observe, and operate AI Systems across their lifecycle.
+- What category does Brunix belong to?: Brunix belongs to the category of AI Software Operators. It is designed to participate in the development and operation of AI Systems rather than functioning only as a conversational assistant or coding tool.
+- What does Brunix do?: Brunix helps build, manage, observe, and operate AI Systems across their lifecycle. It can translate intent and functional requirements into working software logic, reducing the need for every developer or engineer to have specialized knowledge of the underlying AVAP technology.
+- Is Brunix an LLM or an AI agent?: Brunix is an AI Software Operator, not simply an LLM or a single AI agent. It uses distributed intelligence to perform software development and operational functions across the lifecycle of AI Systems.
+- How is Brunix different from an AI coding assistant?: An AI coding assistant primarily helps developers generate, understand, or modify code. Brunix operates at the broader system level, helping build, manage, observe, and operate complete AI Systems across their lifecycle.
+- What is the relationship between Brunix and AVAP Sphere?: AVAP Sphere is the AI Systems Lifecycle Platform, while Brunix is the AI Software Operator within the AVAP ecosystem. Sphere provides the platform and lifecycle environment; Brunix provides intelligent capabilities for building, managing, observing, and operating AI Systems.
+- What is PLATON?: PLATON is the open-source technology foundation behind AVAP. It provides the foundational technology that enables AVAP's virtual programming approach and dynamic execution model.
+- What is the relationship between PLATON and AVAP?: PLATON is the open-source technology foundation underlying AVAP. AVAP builds on that foundation to provide the programming model and technology for building and continuously evolving AI Systems.
+- What are AI Systems?: AI Systems represent the next evolution of enterprise software, in which AI capabilities, software logic, autonomous agents, and enterprise knowledge operate together as one continuously evolving system.
+- How are AI Systems different from AI applications?: An AI application typically uses AI to provide specific capabilities within an application. An AI System is a broader architectural model in which AI capabilities, autonomous agents, software logic, and enterprise knowledge operate together as an integrated and continuously evolving system.
+- How are AI Systems different from traditional software systems?: Traditional software systems were largely designed around deterministic software logic and human-driven development and operation. AI Systems introduce autonomous agents and continuously operating intelligence that can interact with software logic, knowledge, and enterprise systems. This requires infrastructure designed for systems that can operate and evolve continuously.
+- How are AVAP, AVAP Sphere, AVAP Cloud, Brunix, and PLATON related?: They represent different layers of the AVAP ecosystem: PLATON is the open-source technology foundation. AVAP is the technology and programming foundation for AI Systems. AVAP Sphere is the AI Systems Lifecycle Platform for on-premises and customer-controlled environments. AVAP Cloud is the SaaS version of AVAP Sphere, including managed deployments and infrastructure. Brunix is the AI Software Operator that builds, manages, observes, and operates AI Systems. Together, they provide the foundation, technology, lifecycle platform, SaaS delivery model, and intelligent operator for building and operating AI Systems.
+- What is an AI Systems Lifecycle Platform?: An AI Systems Lifecycle Platform is a platform for designing, building, deploying, operating, governing, and continuously evolving AI Systems. It provides a unified environment for managing the complete lifecycle of systems in which AI capabilities, software logic, autonomous agents, and enterprise knowledge operate together. AVAP Sphere is positioned as an AI Systems Lifecycle Platform.
+- What is an AI Software Operator?: An AI Software Operator is intelligent software designed to participate in the development and operation of software systems across their lifecycle. Unlike a traditional AI assistant or coding tool, an AI Software Operator can help build, manage, observe, and operate complete AI Systems. Brunix is positioned as an AI Software Operator.
