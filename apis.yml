@@ -20,6 +20,12 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/avap-brunix.png
 tags:
+- Artificial Intelligence
+- API Development
+- Developer Tools
+- Low-Code
+- Automation
+tags_raw:
 - AI
 - API Development
 - Developer Tools
@@ -37,6 +43,10 @@ apis:
     AVAP BRUNIX is an AI copilot integrated into the AVAP framework, providing intelligent assistance for API development, code generation, testing automation, and API lifecycle management.
   humanURL: ' https://www.avapframework.com/brunix'
   tags:
+  - Artificial Intelligence
+  - API Development
+  - Developer Tools
+  tags_raw:
   - AI
   - API Development
   - Developer Tools
