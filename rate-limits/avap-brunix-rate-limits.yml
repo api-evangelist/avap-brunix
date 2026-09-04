@@ -4,89 +4,33 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: AVAP BRUNIX
 providerId: avap-brunix
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
-tags:
-  - AI
-  - API Development
-  - Developer Tools
-  - Low Code
-  - Automation
-  - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the AVAP BRUNIX API surface. Captures per-tier
-  quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold values to
-  be replaced with published provider limits.
-headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
-responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
-limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - AVAP BRUNIX
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - AVAP BRUNIX
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - AVAP BRUNIX
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - AVAP BRUNIX
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - AVAP BRUNIX
-policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
+modified: '2026-09-04'
+generated: '2026-09-04'
+method: searched
+source: https://avap.ai/pricing
+limit_count: 0
+note: >-
+  Replaces the 2026-05-04 scaffold, which asserted per-tier request rates and X-RateLimit-* response
+  headers that AVAP has never published. AVAP publishes no rate limits and no throttling response
+  contract anywhere reachable: the pricing page meters REQUEST VOLUME ($95 for the first million, $25
+  per additional million) but states no requests-per-second or per-minute ceiling, no burst allowance,
+  no 429 semantics and no rate-limit response headers; and the documentation portal that would carry a
+  reference (alexandria.avapframework.com) returned HTTP 503 on 2026-09-04. This is an honest zero, not
+  an unchecked one.
+quota_signals:
+  - name: Requests
+    kind: billing-meter-not-rate-limit
+    published_text: $95 USD for the first million, $25 USD per million added
+    source: https://avap.ai/pricing
+    note: A monthly billing meter with overage pricing. It is not a throttle and carries no documented enforcement behaviour.
+headers: {}
+responseCodes: {}
+limits: []
+policies: []
+x-evidence:
+  - {url: 'https://avap.ai/pricing', http_status: 200, fetched: '2026-09-04'}
+  - {url: 'https://alexandria.avapframework.com/', http_status: 503, fetched: '2026-09-04', note: 'Salesforce Experience Cloud site returning the "Service Not Available" maintenance route'}
+  - {url: 'https://avs-primary-pre.101obex.mooo.com:3001/get_portal_specs/15', http_status: 500, fetched: '2026-09-04', note: 'AVAP Virtual Server responds but returns no rate-limit headers'}
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

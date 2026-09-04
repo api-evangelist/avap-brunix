@@ -1,0 +1,44 @@
+generated: '2026-09-04'
+method: searched
+source: https://github.com/Admin-101OBEX/101obexcli
+note: >-
+  AVAP BRUNIX itself ships no CLI. The AVAP/101OBeX platform that Brunix runs inside publishes one
+  first-party command-line client, 101obexcli, and the Brunix VS Code extension's own README makes it
+  a prerequisite: "For the extension to work, you must have configured your access to the 101OBeX API
+  through 101obexcli." It is recorded here for that reason, with its owner and its staleness stated.
+cli:
+  name: 101obexcli
+  description: Command line client to access 101OBeX API services.
+  language: C
+  license: MIT
+  repository: https://github.com/Admin-101OBEX/101obexcli
+  owner: Admin-101OBEX
+  docs: https://avap.ai/resources/cli
+  current_release:
+    tag: prerelease-staging
+    name: Staging Enabled
+    published: '2023-09-13'
+  releases:
+    - {tag: prerelease-staging, published: '2023-09-13', assets: [101obexcli-macosx.zip, 101obexcli-win32.zip]}
+    - {tag: prerelease, published: '2022-11-10', assets: [101obexcli-win32.zip, 101obexcli.-.linux.zip, 101obexcli.-.mac.zip]}
+install:
+  - method: github-release
+    platform: windows
+    url: https://github.com/Admin-101OBEX/101obexcli/releases/download/prerelease-staging/101obexcli-win32.zip
+  - method: github-release
+    platform: macos
+    url: https://github.com/Admin-101OBEX/101obexcli/releases/download/prerelease-staging/101obexcli-macosx.zip
+  - method: github-release
+    platform: linux
+    url: https://github.com/Admin-101OBEX/101obexcli/releases/download/prerelease/101obexcli.-.linux.zip
+commands:
+  status: not-captured
+  note: >-
+    The command surface is not published anywhere machine-readable. The repository README is 985 bytes
+    and does not enumerate commands, and the AVAP documentation portal that would carry the reference
+    (alexandria.avapframework.com) returned HTTP 503 on 2026-09-04. No command list is recorded here
+    rather than one being inferred from the binary.
+x-evidence:
+  - {url: 'https://api.github.com/repositories/564277642', http_status: 200, fetched: '2026-09-04', note: 'repo metadata: Admin-101OBEX/101obexcli, MIT, pushed 2023-09-13'}
+  - {url: 'https://github.com/101OBeXCorp/101obexcli/releases/download/prerelease/101obexcli-win32.zip', http_status: 206, fetched: '2026-09-04', note: 'asset downloads; the 101OBeXCorp path 301s to Admin-101OBEX (owner rename)'}
+  - {url: 'https://avap.ai/resources/cli', http_status: 200, fetched: '2026-09-04', note: 'listed in the provider sitemap; body is the site-wide SPA shell, content renders client-side'}

@@ -4,141 +4,165 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: AVAP BRUNIX
 providerId: avap-brunix
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
+modified: '2026-09-04'
+generated: '2026-09-04'
+method: searched
+source: https://avap.ai/pricing
+plan_count: 9
+note: >-
+  Replaces the 2026-05-04 scaffold, which carried invented tiers and TBD prices. Every figure below is
+  read verbatim from the provider's own published pricing page. avap.ai renders client-side and serves
+  a byte-identical HTML shell on every route, so the values were read out of the page's own JavaScript
+  bundle (https://avap.ai/js/bundle.3db876893392bbc3ca0a.min.js) — the same source the browser renders
+  from — rather than from the shell. AVAP BRUNIX is not sold standalone: it is a capability inside AVAP
+  Cloud and is named explicitly as an inclusion of the AVAP Neural Collaborative Edition seat. The
+  plans recorded here are therefore the plans a buyer actually purchases to get Brunix.
 tags:
   - AI
   - API Development
   - Developer Tools
   - Low Code
   - Automation
-description: Machine-readable plans and pricing scaffold for this API provider. Conforms to the API Commons
-  Plans schema. Tier limits and prices are scaffold defaults; replace with provider-published values.
+currency: USD
+billing_terms: Subscriptions are available on a monthly or annual basis. AVAP Cloud tiers advertise a 30-day free trial with no credit card required.
 plans:
-  - id: avap-brunix-free
-    name: Free
-    type: freemium
-    description: Free entry tier for the AVAP BRUNIX API surface. Intended for evaluation, prototyping,
-      and low-volume integrations. Real limits and pricing must be reconciled with the provider's published
-      plan documentation.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota across all included endpoints
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 1000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the free tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 10
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-    elements:
-      - name: Public Documentation
-      - name: Community Support
-      - name: Sandbox Access
-      - name: AVAP BRUNIX
-  - id: avap-brunix-pro
-    name: Professional
+  - id: avap-cloud-starter
+    name: AVAP CLOUD STARTER
+    product: AVAP Cloud
     type: paid
-    description: Production tier for AVAP BRUNIX. Provides higher quotas, priority support, and access
-      to the broader API portfolio. Pricing placeholder; align with the provider's pricing page.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 100000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: TBD
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the professional tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 100
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Overage
-        description: Per-request price after monthly quota is exceeded
-        name: overage
-        type: metered
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1000
-        price: TBD
-        userMultiplied: false
-    elements:
-      - name: All Production Endpoints
-      - name: Email Support
-      - name: SLA Targets
-      - name: Webhook Subscriptions
-      - name: AVAP BRUNIX
-  - id: avap-brunix-enterprise
-    name: Enterprise
+    price: '15.00'
+    currency: USD
+    period: month
+    trial: 30-day free trial, no credit card required
+    description: Membership that allows you to explore and start taking advantage of AVAP technology.
+  - id: avap-cloud-professional
+    name: AVAP CLOUD PROFESSIONAL
+    product: AVAP Cloud
+    type: paid
+    price: '145.00'
+    currency: USD
+    period: month
+    trial: 30-day free trial, no credit card required
+    description: Membership that allows you to explore and start taking advantage of AVAP technology.
+    marketplace: https://aws.amazon.com/marketplace/pp/prodview-xtyh5bcceva7o
+  - id: avap-cloud-business
+    name: AVAP CLOUD BUSINESS
+    product: AVAP Cloud
+    type: paid
+    price: '750.00'
+    currency: USD
+    period: month
+    trial: 30-day free trial, no credit card required
+    description: Pre-configured AVAP infrastructure deployment, enabling you to concentrate on developing and publishing your APIs.
+    marketplace: https://aws.amazon.com/marketplace/pp/prodview-hpi6mkwf3mbhg
+  - id: avap-cloud-enterprise
+    name: AVAP CLOUD ENTERPRISE
+    product: AVAP Cloud
     type: enterprise
-    description: Custom-negotiated tier for AVAP BRUNIX. Includes dedicated capacity, contractual SLAs,
-      security review, data residency options, and named technical account management.
-    entries:
-      - label: API Requests
-        description: Negotiated request volume; -1 indicates uncapped subject to fair use
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
-        userMultiplied: false
-      - label: Rate Limit
-        description: Negotiated burst and steady-state rate
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 1000
-        timeFrame: minute
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
-        userMultiplied: false
-    elements:
-      - name: Unlimited / Negotiated Volume
-      - name: 24/7 Dedicated Support
-      - name: Contractual SLA
-      - name: Security & Compliance Review
-      - name: Dedicated Account Manager
-      - name: Custom Data Residency
-      - name: AVAP BRUNIX
+    price: custom
+    currency: USD
+    period: year
+    billing: Billed Annually
+    description: Maintain full control over the deployment of AVAP infrastructure, tailored for corporations.
+    contact: https://avap.ai/contact
+  - id: avap-neural-standalone
+    name: AVAP Neural — STANDALONE
+    product: AVAP Neural (DevStudio)
+    type: free
+    price: '0.00'
+    currency: USD
+    period: month
+    description: Local deployment with its own database, ideal for learning, testing, and using AVAP tools, like Mesh Manager and Commander.
+  - id: avap-neural-professional
+    name: AVAP Neural — PROFESSIONAL EDITION
+    product: AVAP Neural (DevStudio)
+    type: paid
+    price: null
+    currency: USD
+    period: user/month
+    availability: Coming soon
+    description: >-
+      A robust, fully integrated IDE for independent developers and small teams, offering complete API
+      lifecycle control, multi-language support, seamless environment switching, and advanced credential
+      management. Price not published — the page shows "Coming soon".
+  - id: avap-neural-collaborative
+    name: AVAP Neural — COLLABORATIVE EDITION
+    product: AVAP Neural (DevStudio)
+    type: paid
+    price: '9.95'
+    currency: USD
+    period: user/month
+    brunix_included: true
+    description: >-
+      Includes all Professional features plus real-time shared coding, built-in Google Meet, project chat,
+      secure team management, and Brunix AI assistance. Empowering distributed teams to work as if in the
+      same room. This is the only published plan that names Brunix as an inclusion.
+  - id: avap-neural-enterprise
+    name: AVAP Neural — ENTERPRISE EDITION
+    product: AVAP Neural (DevStudio)
+    type: enterprise
+    price: custom
+    description: On-premise and hybrid AVS, integrates databases, manages ACLs, and structures architecture with AVAP Mesh Manager.
+    contact: https://avap.ai/contact
+  - id: avap-gateway-enterprise
+    name: AVAP GATEWAY ENTERPRISE
+    product: AVAP Gateway
+    type: enterprise
+    price: custom
+    description: On-premise centralized API exposure point, managing traffic and routing between services based on defined logic.
+    contact: https://avap.ai/contact
+add_ons:
+  note: >-
+    The pricing page carries a "Deployment Features" comparison grid whose per-tier cells are rendered
+    from minified component state; the labels and their prices are published verbatim, but which tier a
+    given price attaches to is not machine-readable from the bundle, so no tier attribution is asserted.
+  items:
+    - {name: AVAP Gateway Advanced, price: '750.00', currency: USD, period: month}
+    - {name: Environments, price: '3500.00', currency: USD, period: month}
+    - {name: AVAP Virtual Server, price: '275.00', currency: USD, period: month}
+    - {name: Dev Ambients, price: '45.00', currency: USD, period: month}
+    - {name: AVAP Language Server, price: '25.00', currency: USD, period: month}
+    - {name: Developer Portal, price: '250.00', currency: USD, period: month}
+    - {name: Published API, price: '10.00', currency: USD, period: api/month}
+    - {name: Published Virtual API, price: '5.00', currency: USD, period: api/month}
+    - {name: API Product Wrapped, price: '15.00', currency: USD, period: api-product/month}
+    - {name: AVAP Vision, price: '2250.00', currency: USD, period: month}
+    - {name: AVAP Mesh Manager, price: '1350.00', currency: USD, period: month/deployment}
+metered:
+  - name: Requests
+    published_text: $95 USD for the first million, $25 USD per million added
+    included_first: 1000000
+    first_block_price: '95.00'
+    overage_price: '25.00'
+    overage_unit: 1000000
+    currency: USD
+entitlement_dimensions:
+  - Custom Domain
+  - Environments
+  - Organizations
+  - API Projects
+  - Users
+  - Teams
+  - Requests
+  - Storage
+  - AVAP Marketplace
+  - IP Filtering
+  - Multi-Cloud
+  - WAF & DDoS Protection
+  - Auto-Scaling
+  - Developer Portal
+  - Basic Analytics
+  - Logic Infrastructure per Organization
+  - Retention Data
+  - Technical Support
+  - Training
+support_tiers:
+  - AVAP Community
+  - eMail (1 hour)
+  - 24x7 eMail
+x-evidence:
+  - {url: 'https://avap.ai/pricing', http_status: 200, fetched: '2026-09-04', note: 'listed in the provider sitemap; body is the site-wide SPA shell'}
+  - {url: 'https://avap.ai/js/bundle.3db876893392bbc3ca0a.min.js', http_status: 200, fetched: '2026-09-04', note: '17.8MB application bundle carrying the pricing components verbatim'}
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

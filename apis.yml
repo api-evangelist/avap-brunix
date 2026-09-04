@@ -52,7 +52,8 @@ apis:
   name: AVAP BRUNIX
   description: >-
     AVAP BRUNIX is an AI copilot integrated into the AVAP framework, providing intelligent assistance for API development, code generation, testing automation, and API lifecycle management.
-  humanURL: ' https://www.avapframework.com/brunix'
+  humanURL: 'https://avap.ai/brunix'
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/avap-brunix.png
   tags:
   - Artificial Intelligence
   - API Development
@@ -63,7 +64,7 @@ apis:
   - Developer Tools
   properties:
   - type: Documentation
-    url: ' https://www.avapframework.com/brunix'
+    url: 'https://avap.ai/brunix'
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -78,3 +79,38 @@ common:
   url: https://www.linkedin.com/company/avap-framework/
 - type: LlmsText
   url: https://avapframework.com/llms.txt
+- type: DeveloperPortal
+  url: https://developer.avapframework.com/
+- type: Documentation
+  url: https://avap.ai/brunix
+- type: Support
+  url: https://avap.ai/support
+- type: Blog
+  url: https://avap.ai/resources/blog
+- type: Roadmap
+  url: https://avap.ai/resources/roadmap
+- type: Pricing
+  url: https://avap.ai/pricing
+- type: SignUp
+  url: https://avapid.com/Register
+- type: PrivacyPolicy
+  url: https://avap.ai/legal/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/101OBEX-CORP
+- type: Packages
+  url: packages/avap-brunix-packages.yml
+- type: CLI
+  url: cli/avap-brunix-cli.yml
+- type: Plans
+  url: plans/avap-brunix-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/avap-brunix-rate-limits.yml
+- type: ChangeLog
+  url: changelog/avap-brunix-changelog.yml
+- type: LLMsTxt
+  url: llms/avap-brunix-llms.txt
+x-enrichment:
+  date: '2026-09-04'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v3

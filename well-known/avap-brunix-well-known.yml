@@ -1,0 +1,706 @@
+generated: '2026-09-04'
+method: probed
+source: live GET probes of every host named by apis.yml, the avap.ai/avapframework.com SPA bundles and the AVAP
+  Virtual Server endpoints
+hit_count: 0
+note: Nothing is served on any /.well-known/ path on any AVAP host. Eight of the ten hosts are catch-all React SPAs
+  that answer HTTP 200 with a byte-identical HTML shell for every path, including a negative-control path that cannot
+  exist, so their 200s are recorded as misses and NO WellKnown or SecurityTxt pointer is emitted. The two AVAP Virtual
+  Server hosts return honest JSON 404s. No agent card, no OAuth/OIDC discovery, no api-catalog, no apis.json.
+hosts:
+- host: https://avap.ai
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 1604134
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+- host: https://www.avapframework.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 1604134
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 1604134-byte SPA shell, not a document'
+- host: https://avapcloud.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 801
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+- host: https://avapid.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 774
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+- host: https://developer.avapframework.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 774
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 774-byte SPA shell, not a document'
+- host: https://marketplace.avapcloud.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 805
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 805-byte SPA shell, not a document'
+- host: https://developer.101obex.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 801
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 801-byte SPA shell, not a document'
+- host: https://www.101obex.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 1938
+  note: 'Catch-all single-page app: every path, including one that cannot exist, returns the same byte-identical
+    HTML shell. Every 200 below is a miss.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 'soft-200: identical 1938-byte SPA shell, not a document'
+- host: https://avs-primary-pre.101obex.mooo.com:3001
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 101
+  note: AVAP Virtual Server node; answers honest JSON 404s, so these negatives are real.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+- host: https://acl.avapcloud.p2p.mooo.com:3001
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/avap-brunix-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 101
+  note: AVAP Virtual Server node; answers honest JSON 404s, so these negatives are real.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+contract_discovery:
+  checked: '2026-09-04'
+  result: no machine-readable contract published
+  note: STEP 0b was run in full against every host this record knows. AVAP publishes no OpenAPI, Swagger, GraphQL,
+    AsyncAPI, gRPC/Protobuf or WSDL contract anywhere reachable, and ships no MCP server or A2A agent card. The
+    AVAP Virtual Server nodes answer honest JSON 404s on every spec path; the eight web hosts answer 200 with the
+    same SPA shell on every path, so their 200s are misses. Brunix's own backend, read from the extension source
+    the company publishes on GitHub, is a raw TCP socket protocol on hesperidium.101obex.mooo.com:8090 (now unreachable)
+    plus an HTTP helper at :3001 — neither is a documented, contracted API surface.
+  probes:
+  - kind: rest-openapi
+    hosts:
+    - https://avap.ai
+    - https://www.avapframework.com
+    - https://avapcloud.com
+    - https://avapid.com
+    - https://developer.avapframework.com
+    - https://marketplace.avapcloud.com
+    - https://developer.101obex.com
+    - https://www.101obex.com
+    paths:
+    - /openapi.json
+    - /openapi.yaml
+    - /swagger.json
+    - /v1/openapi.json
+    - /api-docs
+    - /docs
+    - /redoc
+    result: 200 on all, every body the byte-identical SPA shell — no candidate parsed as OpenAPI/Swagger
+  - kind: rest-openapi
+    hosts:
+    - https://avs-primary-pre.101obex.mooo.com:3001
+    - https://acl.avapcloud.p2p.mooo.com:3001
+    paths:
+    - /openapi.json
+    - /openapi.yaml
+    - /swagger.json
+    - /v1/openapi.json
+    - /api-docs
+    - /docs
+    - /redoc
+    result: 404 JSON on every path
+  - kind: graphql
+    result: no /graphql surface named anywhere in the site bundles, docs or extension source; not probed blind
+  - kind: mcp-tools-list
+    result: no MCP endpoint published. avap.ai markets MCP servers as something AVAP orchestrates for customers,
+      not something AVAP serves
+  - kind: ogc
+    result: not applicable — no WMS/WFS/WCS/WMTS/CSW or OGC API evidence anywhere in the record
+  - kind: a2a-agent-card
+    paths:
+    - /.well-known/agent-card.json
+    - /.well-known/agent.json
+    result: no card. Eight hosts returned the SPA shell (rejected as HTML), two returned 404. NO AgentCard artifact
+      written
+  - kind: wsdl
+    result: no ?wsdl / ?singleWsdl surface and no SOAP language anywhere in the provider surface
+  - kind: grpc-protobuf
+    result: no .proto in the company GitHub owners (101OBEX-CORP, Admin-101OBEX) and none referenced in docs
+  docs_wall:
+    url: https://alexandria.avapframework.com/
+    http_status: 503
+    note: AVAP Alexandria, the documentation portal, is a Salesforce Experience Cloud site that resolved to its
+      "Service Not Available" maintenance route on 2026-09-04. communities.avapframework.com and blog.avapframework.com
+      return the same 503 from the same org. The successor hosts named in the new avap.ai bundle — alexandria.avap.ai,
+      communities.avap.ai, blog.avap.ai — do not resolve in DNS yet.

@@ -1,0 +1,68 @@
+generated: '2026-09-04'
+method: searched
+source: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension-ia
+note: >-
+  AVAP publishes no dated changelog page and no release-notes feed on avap.ai — /resources/roadmap is a
+  forward-looking roadmap page, not a change record, and the documentation portal that might carry one
+  (alexandria.avapframework.com) returned HTTP 503 on 2026-09-04. What the provider does publish, and
+  what is captured here, is (a) the Visual Studio Marketplace release record for the Brunix extension,
+  which carries the current version and its publication date, and (b) a CHANGELOG.md in the company's
+  own public GitHub repository for the extension. The GitHub changelog stopped at 0.0.4 and predates
+  the entire 1.30.x line now shipping, so the two do not reconcile — that gap is the finding.
+versioning:
+  scheme: semver
+  current: 1.30.148
+  current_published: '2026-07-21'
+  first_released: '2024-10-22'
+  update_count: 101
+  note: Marketplace reports 101 published updates since first release; only the current version's date is exposed publicly.
+channels:
+  - name: Visual Studio Marketplace release record
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension-ia
+    dated: true
+    granularity: current-version-only
+  - name: CHANGELOG.md in the extension source repository
+    url: https://github.com/Admin-101OBEX/101obex-api-extension/blob/main/101obex-api-extension-Brunix/CHANGELOG.md
+    dated: false
+    granularity: per-version, undated
+    stale: true
+entries:
+  - version: 1.30.148
+    date: '2026-07-21'
+    source: vscode-marketplace
+    highlights: [Current published build of the AVAP Brunix AI extension.]
+    breaking: unknown
+  - version: 0.0.4
+    date: null
+    source: github-changelog
+    highlights: ['Integration with Marieta ChatGPT-3 IA.']
+  - version: 0.0.3
+    date: null
+    source: github-changelog
+    highlights: ['Project selection.']
+  - version: 0.0.2
+    date: null
+    source: github-changelog
+    highlights: ['Show online APIs documentation.']
+  - version: 0.0.1
+    date: null
+    source: github-changelog
+    highlights: ['Initial release. Show info about your Organization, Development Teams and APIs available.']
+sibling_release_dates:
+  note: Latest published date for every first-party AVAP extension, as a platform-wide release cadence signal.
+  extensions:
+    - {id: 101OBeXCorp.code-sender, version: 1.30.91, published: '2026-07-28'}
+    - {id: 101OBeXCorp.101obex-api-extension-ia, version: 1.30.148, published: '2026-07-21'}
+    - {id: 101OBeXCorp.avap-api-designer, version: 1.30.85, published: '2026-07-21'}
+    - {id: 101OBeXCorp.101obex-api-extension-api-code, version: 1.30.149, published: '2026-06-30'}
+    - {id: 101OBeXCorp.avap-linter, version: 1.30.78, published: '2025-11-11'}
+    - {id: 101OBeXCorp.101obex-api-extension-api-publish, version: 1.30.141, published: '2025-09-25'}
+    - {id: 101OBeXCorp.avap-unit-testing, version: 1.30.85, published: '2025-09-19'}
+    - {id: 101OBeXCorp.101obex-api-extension, version: 1.31.141, published: '2025-09-19'}
+    - {id: 101OBeXCorp.avap-debugger, version: 1.30.80, published: '2025-09-18'}
+    - {id: 101OBeXCorp.101obex-api-extension-api-specs, version: 1.30.185, published: '2025-07-10'}
+    - {id: 101OBeXCorp.avap-connectors, version: 1.30.80, published: '2025-07-09'}
+x-evidence:
+  - {url: 'https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery', http_status: 200, fetched: '2026-09-04', note: 'unauthenticated gallery query, publisher 101OBeXCorp'}
+  - {url: 'https://raw.githubusercontent.com/Admin-101OBEX/101obex-api-extension/main/101obex-api-extension-Brunix/CHANGELOG.md', http_status: 200, fetched: '2026-09-04'}
+  - {url: 'https://alexandria.avapframework.com/', http_status: 503, fetched: '2026-09-04'}

@@ -1,0 +1,159 @@
+generated: '2026-09-04'
+method: searched
+source: https://marketplace.visualstudio.com/publishers/101OBeXCorp
+note: >-
+  AVAP BRUNIX is a component of the AVAP platform built by 101OBeX Corp; every package below is
+  published by the first-party VS Code Marketplace publisher 101OBeXCorp (display name "AVAP") or by
+  the company's GitHub owner Admin-101OBEX. AVAP publishes NO API client libraries — npm, PyPI,
+  RubyGems, crates.io, Packagist, NuGet, Maven Central and pkg.go.dev were all searched on 2026-09-04
+  and none carries a first-party AVAP/Brunix/101OBeX SDK. The distribution channel for Brunix is a
+  Visual Studio Code extension, not a client SDK, so no `SDKs` pointer is emitted.
+registries_searched:
+  - {registry: vscode-marketplace, query: 'publisher:101OBeXCorp', result: 11 first-party extensions}
+  - {registry: npm, query: avap / brunix / 101obex, result: no first-party package (avap-flow-* and avap-vue-* belong to an unrelated Chinese project)}
+  - {registry: pypi, query: 'avap, avap-cli, brunix, avap-framework', result: 404 on every name}
+  - {registry: github-releases, query: Admin-101OBEX/101obexcli, result: 2 releases with binary assets}
+  - {registry: rubygems, query: avap / brunix, result: not searched-hit — no evidence of a Ruby client anywhere in the provider surface}
+packages:
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.101obex-api-extension-ia
+    display_name: AVAP Brunix AI
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension-ia
+    install: code --install-extension 101OBeXCorp.101obex-api-extension-ia
+    official: true
+    version: 1.30.148
+    published: '2026-07-21'
+    first_released: '2024-10-22'
+    installs: 75
+    note: The Brunix product itself, delivered as a VS Code chat/assistant panel. This is the package this repo profiles.
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.101obex-api-extension
+    display_name: AVAP DEV Extensions for Microsoft Visual Studio
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension
+    install: code --install-extension 101OBeXCorp.101obex-api-extension
+    official: true
+    version: 1.31.141
+    published: '2025-09-19'
+    first_released: '2024-07-23'
+    installs: 1212
+    note: Base extension; the Brunix extension declares it as an extensionDependency.
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.101obex-api-extension-api-code
+    display_name: AVAP Source Control
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension-api-code
+    install: code --install-extension 101OBeXCorp.101obex-api-extension-api-code
+    official: true
+    version: 1.30.149
+    published: '2026-06-30'
+    first_released: '2024-07-23'
+    installs: 180
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.code-sender
+    display_name: AVAP Zero
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.code-sender
+    install: code --install-extension 101OBeXCorp.code-sender
+    official: true
+    version: 1.30.91
+    published: '2026-07-28'
+    first_released: '2025-04-07'
+    installs: 49
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.avap-api-designer
+    display_name: AVAP API Designer
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.avap-api-designer
+    install: code --install-extension 101OBeXCorp.avap-api-designer
+    official: true
+    version: 1.30.85
+    published: '2026-07-21'
+    first_released: '2025-07-03'
+    installs: 43
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.avap-linter
+    display_name: AVAP Linter & Completion
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.avap-linter
+    install: code --install-extension 101OBeXCorp.avap-linter
+    official: true
+    version: 1.30.78
+    published: '2025-11-11'
+    first_released: '2024-04-11'
+    installs: 73
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.101obex-api-extension-api-publish
+    display_name: AVAP API Release Manager
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension-api-publish
+    install: code --install-extension 101OBeXCorp.101obex-api-extension-api-publish
+    official: true
+    version: 1.30.141
+    published: '2025-09-25'
+    first_released: '2024-07-23'
+    installs: 98
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.101obex-api-extension-api-specs
+    display_name: AVAP API Specs
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.101obex-api-extension-api-specs
+    install: code --install-extension 101OBeXCorp.101obex-api-extension-api-specs
+    official: true
+    version: 1.30.185
+    published: '2025-07-10'
+    first_released: '2025-01-15'
+    installs: 62
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.avap-debugger
+    display_name: AVAP Debugger
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.avap-debugger
+    install: code --install-extension 101OBeXCorp.avap-debugger
+    official: true
+    version: 1.30.80
+    published: '2025-09-18'
+    first_released: '2025-04-03'
+    installs: 206
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.avap-unit-testing
+    display_name: AVAP Unit Testing
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.avap-unit-testing
+    install: code --install-extension 101OBeXCorp.avap-unit-testing
+    official: true
+    version: 1.30.85
+    published: '2025-09-19'
+    first_released: '2025-07-02'
+    installs: 41
+  - language: typescript
+    registry: vscode-marketplace
+    name: 101OBeXCorp.avap-connectors
+    display_name: AVAP Connectors
+    url: https://marketplace.visualstudio.com/items?itemName=101OBeXCorp.avap-connectors
+    install: code --install-extension 101OBeXCorp.avap-connectors
+    official: true
+    version: 1.30.80
+    published: '2025-07-09'
+    first_released: '2025-07-03'
+    installs: 31
+  - language: c
+    registry: github-releases
+    name: 101obexcli
+    display_name: 101OBeX CLI
+    url: https://github.com/Admin-101OBEX/101obexcli
+    install: Download the platform zip from the GitHub release page (no package-manager distribution)
+    official: true
+    version: prerelease-staging
+    published: '2023-09-13'
+    license: MIT
+    note: >-
+      The command-line client for 101OBeX/AVAP API services. Distributed only as release-attached zips
+      (win32, macosx, linux); there is no semantic version tag, so `version` records the release tag
+      verbatim. Last release 2023-09-13 — roughly three years behind the VS Code extension line, which
+      is the abandonment signal worth watching here.
+decay_signals:
+  - The Brunix VS Code extension is actively maintained (1.30.148 on 2026-07-21, 101 published updates since 2024-10-22).
+  - The first-party CLI has not shipped a release since 2023-09-13 and is still tagged "prerelease".
+  - No API client library exists in any language registry, so an integrator has no first-party SDK path at all.
