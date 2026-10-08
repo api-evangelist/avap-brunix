@@ -166,3 +166,73 @@ x-evidence:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: AVAP CLOUD STARTER
+    access: paid
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: AVAP CLOUD PROFESSIONAL
+    access: paid
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: AVAP CLOUD BUSINESS
+    access: paid
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: AVAP CLOUD ENTERPRISE
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: AVAP Neural — STANDALONE
+    access: free
+    model: free
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: AVAP Neural — PROFESSIONAL EDITION
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - other
+  - name: AVAP Neural — COLLABORATIVE EDITION
+    access: paid
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - other
+  - name: AVAP Neural — ENTERPRISE EDITION
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: AVAP GATEWAY ENTERPRISE
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
