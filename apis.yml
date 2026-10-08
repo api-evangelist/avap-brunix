@@ -69,6 +69,8 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 common:
+- type: FinOps
+  url: finops/avap-brunix-finops.yml
 - type: DomainSecurity
   url: security/avap-brunix-domain-security.yml
 - type: Portal
